@@ -1,0 +1,21 @@
+extends layout 
+
+block layout-content 
+   div.View.EducationView 
+     h1.Banner Education History 
+     div.Message.ProfileMessage
+        table
+          tr
+              th= "School/University"
+              th= "Qualification"
+              th= "Subject"
+              th= "Grade"
+          for subject in resultArray
+            tr 
+              td= subject.school
+              td= subject.level
+              td= subject.subject
+              td= subject.grade
+     div.NavButtons
+       a(href="/profile")
+         div.NavButton Home

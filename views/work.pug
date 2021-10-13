@@ -1,0 +1,23 @@
+extends layout 
+
+block layout-content 
+   div.View.WorkView 
+     h1.Banner Work History 
+     div.Message.ProfileMessage
+        table
+          tr
+              th= "Date"
+              th= "Organisation"
+              th= "Role"
+              th= "Description"
+              th= "Key Skills"
+          for role in resultArray
+            tr 
+              td= role.date
+              td= role.organisation
+              td= role.role
+              td= role.description 
+              td= role.skills
+     div.NavButtons
+       a(href="/profile")
+         div.NavButton Home

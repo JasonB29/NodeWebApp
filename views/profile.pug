@@ -1,0 +1,21 @@
+extends layout 
+
+block layout-content 
+  div.View.ProfileView
+    h1.Banner #{profile.name}
+    div.Message.ProfileMessage
+      div.ProfileTitle 
+        h1 Personal Profile 
+        div.TitleButtons
+          a(href="/education")
+            div.NavButton.ProfileButton Education
+          a(href="/work")
+            div.NavButton.ProfileButton Work
+      div.Details 
+        p I am a qualified commercial airline pilot employed by Cathay Pacific Airways, but I have always been fascinated with software development and in particular mobile applications and backend Restful services. This keen interest lead me to look into the anatomy of a mobile app, which then kickstarted an ongoing personal development plan of learning how to write IOS apps in Swift, Android apps using Kotlin, and most recently SwiftUI. 
+        p As you can see in my work history, I don't have official experience working within a tech company, but I do have a portfolio of sample projects that I have completed in my spare time. These projects consist of a SwiftUI app that incorporates networking calls and CoreData, an Android Kotlin app based off a Udacity Android course that I completed, and also this venture into the interesting world of Node.js! All the pages of this website run off a Node.js server that utilises the non-blocking feature to communicate with a MongoDB cluster.
+        p Whilst my experience may not be based around software development, I do believe that the skills that I can bring from working within a team, problem solving and communicating effectively from my time as a pilot, can be transferred to any working environment. Not to mention you'll be getting a highly motivated individual who is enthusiastic and ready to learn and broaden his software development skills.
+        p Please let me know if you have any questions that I can answer, in the meantime please click on the buttons above to view my education and work history. 
+    div.NavButtons
+       a(href="/")
+         div.NavButton Exit
