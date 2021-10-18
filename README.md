@@ -17,3 +17,5 @@ After installing docker to your local machine, you can run the image using the f
 docker run --rm -dp 8000:8000 jasonb29/nodewebapp:V1.0.0
 
 
+# Testing
+An integration test has been written under the 'test' folder. Mocha has been used along with the Chai module in order to test the endpoints of the server return a status code 200 when called. 
