@@ -62,6 +62,8 @@ function queryDB(collection, res) {
  * Server Activation
  */
 
-app.listen(port, () => {
+var server = app.listen(port, () => {
     console.log(`listening to requests on port: ${port}`);
-})
+});
+
+module.exports = server
