@@ -19,3 +19,7 @@ docker run --rm -dp 8000:8000 jasonb29/nodewebapp:V1.0.0
 
 # Testing
 An integration test has been written under the 'test' folder. Mocha has been used along with the Chai module in order to test the endpoints of the server return a status code 200 when called. 
+
+To run the test, open up your command line tool, navigate to the folder and run the following command:
+
+npm test
