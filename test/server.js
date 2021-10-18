@@ -20,7 +20,7 @@ describe("NodeWebApp API Tests", function() {
         });
     });
     
-    describe("Profile page resonds with status 200", function() {
+    describe("Profile page responds with status 200", function() {
         it('returns status 200', function(done) {
             chai
                 .request(app)
@@ -32,7 +32,7 @@ describe("NodeWebApp API Tests", function() {
         });
     });
 
-    describe("Education page resonds with status 200", function() {
+    describe("Education page responds with status 200", function() {
         it('returns status 200', function(done) {
             chai
                 .request(app)
@@ -44,7 +44,7 @@ describe("NodeWebApp API Tests", function() {
         });
     });
 
-    describe("Work page resonds with status 200", function() {
+    describe("Work page responds with status 200", function() {
         it('returns status 200', function(done) {
             chai
                 .request(app)
